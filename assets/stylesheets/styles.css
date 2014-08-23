@@ -299,13 +299,15 @@ article:nth-child(3)::before,
 }
 
 .post .highlight {
-	max-width: none;
+	max-width: 550px;
+	display: block;
+        width: auto;
+        overflow: auto;
 	text-align: justify;
 	background-color: rgb(248, 248, 248);
 	color: black;
 	border: 1px solid rgba(144, 144, 144, .3);
-	border-left: none;
-	border-right: none;
+        border-radius:3px;
 }
 
 .post *,
@@ -388,6 +390,14 @@ article::before {
 .highlight pre code {
 	background: none;
 	border: none;
+	margin: 5px 5px;
+        max-width: 550px;
+	display: block;
+        width: auto;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        word-break: break-all;
 }
 
 .instapaper {
@@ -449,7 +459,7 @@ article .read-more.button{
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
-  background: #F40000 url(/assets/images/cargo/icons/arrow_right_padded-8dc031e52ae66d541aca2f2d44c6863c.png) no-repeat 100% 10px;
+  background: #F40000 url(/assets/images/cargo/icons/arrow_right_padded-422c563e65fdbe0f46e4e76fd8f46ec6.png) no-repeat 100% 10px;
   background-origin: padding-box;
   background-size: 25px 10px;
   font-weight: bold;
@@ -767,11 +777,10 @@ nav.pagination span.next {
 }
 
 .post pre {
-  max-width: 550px;
+        max-width: 550px;
 	background-color: transparent;
 	border: none;
-	margin: 15px auto;
-  width: 100%;
+        width: auto;
 }
 
 .post.detail-view code {
